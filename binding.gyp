@@ -1,10 +1,10 @@
 {
   "targets": [
     {
-      "target_name": "CreateMutex",
+      "target_name": "CreateSemaphore",
       "sources": [
         "src/main.cc",
-        "src/mutex.cc"
+        "src/semaphore.cc"
       ],
       "include_dirs" : [
         "<!(node -e \"require('nan')\")"

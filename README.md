@@ -1,24 +1,24 @@
-# windows-mutex
+# windows-semaphore
 
-Expose the Windows CreateMutex API to Node.JS.
+Expose the Windows CreateSemaphore API to Node.JS.
 
 ## Installation
 
-`windows-mutex` will only compile in Windows machines, so it is advisable
+`windows-semaphore` will only compile in Windows machines, so it is advisable
 to use the `--save-optional` flag and wrap the
-`require('windows-mutex')` call in a `try {} catch {}` block, in case your
+`require('windows-semaphore')` call in a `try {} catch {}` block, in case your
 code also runs on other platforms.
 
 ```
-npm install --save-optional windows-mutex
+npm install --save-optional windows-semaphore
 ```
 
 ## Usage
 
 ```javascript
-import { Mutex } from 'windows-mutex';
+import { Semaphore } from "windows-semaphore";
 
-var mutex = new Mutex('my-mutex');
-console.log(mutex.isActive());
-mutex.release();
+var semaphore = new Semaphore("my-semaphore");
+console.log(semaphore.isActive());
+semaphore.release();
 ```

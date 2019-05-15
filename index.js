@@ -1,1 +1,1 @@
-module.exports = require('bindings')('CreateMutex');
+module.exports = require("bindings")("CreateSemaphore");

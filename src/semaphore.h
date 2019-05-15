@@ -1,26 +1,23 @@
-#ifndef MUTEX_H
-#define MUTEX_H
+#ifndef SEMAPHORE_H
+#define SEMAPHORE_H
 
 #include <nan.h>
 #include <windows.h>
 
-NAN_METHOD(isActive);
-
-class Mutex : public Nan::ObjectWrap {
+class Semaphore : public Nan::ObjectWrap {
 public:
 	static NAN_MODULE_INIT(Init);
 
 private:
-	explicit Mutex(const char *name, HANDLE mutex);
-	~Mutex();
+	explicit Semaphore(const char *name, HANDLE semaphore);
+	~Semaphore();
 
 	static NAN_METHOD(New);
 	static NAN_METHOD(Release);
-	static NAN_METHOD(IsActive);
 	static Nan::Persistent<v8::Function> constructor;
 	
 	const char* name_;
-	HANDLE mutex_;
+	HANDLE semaphore_;
 };
 
-#endif // !MUTEX_H
+#endif // !SEMAPHORE_H
