@@ -1,13 +1,13 @@
 {
-  "name": "windows-mutex",
+  "name": "node-windows-semaphore",
   "version": "0.2.1",
-  "description": "Expose the Windows CreateMutex API to Node.JS",
+  "description": "Expose the Windows CreateSemaphore API to Node.JS",
   "main": "index.js",
-  "homepage": "https://github.com/Microsoft/node-windows-mutex",
-  "bugs": "https://github.com/Microsoft/node-windows-mutex/issues",
+  "homepage": "https://github.com/Xcraft-Inc/node-windows-semaphore",
+  "bugs": "https://github.com/Xcraft-Inc/node-windows-semaphore/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Microsoft/node-windows-mutex.git"
+    "url": "https://github.com/Xcraft-Inc/node-windows-semaphore.git"
   },
   "author": "Microsoft",
   "license": "MIT",
