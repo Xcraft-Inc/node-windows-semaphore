@@ -1,6 +1,6 @@
 {
   "name": "node-windows-semaphore",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "Expose the Windows CreateSemaphore API to Node.JS",
   "main": "index.js",
   "homepage": "https://github.com/Xcraft-Inc/node-windows-semaphore",
